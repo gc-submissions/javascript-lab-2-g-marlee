@@ -12,3 +12,11 @@ let chooseOption = (opt1, opt2) => {
         return opt2;
     }
 }
+
+function attackPlayer(health) {
+    return(health - randomDamage());
+}
+
+let logHealth = (player, health) => {
+    console.log(`${player} health: ${health}`);
+}
