@@ -1,5 +1,5 @@
 "use strict";
 
-var randomDamage = () => {
-
+let randomDamage = () => {
+    return(Math.floor(Math.random() * 10) +1);
 }
