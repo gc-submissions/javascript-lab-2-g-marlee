@@ -24,3 +24,11 @@ let logHealth = (player, health) => {
 let logDeath = (winner, loser) => {
     console.log(`${winner} defeated ${loser}`);
 }
+
+let isDead = (health) => {
+    if (health <= 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
