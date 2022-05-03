@@ -99,3 +99,18 @@ function getGrade(gradeNumber) {
 }
 
 console.log(getGrade(85));
+
+function prioritize(urgent, important) {
+    let priority = 0;
+    if (urgent && important) {
+        return priority = 1;
+    } else if (!urgent && important) {
+        return priority = 2;
+    } else if (urgent && !important) {
+        return priority = 3;
+    } else {
+        return priority = 4;
+    }
+}
+
+console.log(prioritize(true, false));
