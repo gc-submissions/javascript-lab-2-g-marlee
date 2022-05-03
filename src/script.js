@@ -76,9 +76,26 @@ function printTriangle(width) {
         for (let i = 0; i < h; i++) {
             string += "#"
         }
-
         console.log(string);
     }
 }
 
 printTriangle(5);
+
+function getGrade(gradeNumber) {
+    let letterGrade = "";
+    if (gradeNumber >= 90) {
+        letterGrade = "A";
+    } else if (gradeNumber >= 80) {
+        letterGrade = "B";
+    } else if (gradeNumber >= 70) {
+        letterGrade = "C";
+    } else if (gradeNumber >= 60) {
+        letterGrade = "D";
+    } else {
+        letterGrade = "F";
+    }
+    return letterGrade;
+}
+
+console.log(getGrade(85));
