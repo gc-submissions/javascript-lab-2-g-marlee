@@ -55,3 +55,18 @@ function fight(player1, player2, player1Health, player2Health) {
 }
 
 fight("Godzilla", "King Kong", 100, 100);
+
+
+// extended challenges
+function printSquare(width) {
+    
+    for (let i = 0; i < width; i++) {
+        let string = ""
+        for (let b = 0; b < width; b++) {
+            string += "#"
+        }
+        console.log(string);
+    }
+}
+
+printSquare(4);
