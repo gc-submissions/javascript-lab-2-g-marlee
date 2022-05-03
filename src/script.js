@@ -59,7 +59,6 @@ fight("Godzilla", "King Kong", 100, 100);
 
 // extended challenges
 function printSquare(width) {
-    
     for (let i = 0; i < width; i++) {
         let string = ""
         for (let b = 0; b < width; b++) {
@@ -70,3 +69,16 @@ function printSquare(width) {
 }
 
 printSquare(4);
+
+function printTriangle(width) {
+    for (let h = 0; h < width; h++) {
+        let string = "#";
+        for (let i = 0; i < h; i++) {
+            string += "#"
+        }
+
+        console.log(string);
+    }
+}
+
+printTriangle(5);
